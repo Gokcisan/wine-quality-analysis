@@ -1,26 +1,47 @@
 # 🍷 Wine Quality Analysis
 
-This project explores the Wine Quality dataset by performing exploratory data analysis (EDA) and basic machine learning modeling to predict wine quality based on physicochemical features.
+This project explores the **Wine Quality** dataset to uncover insights into the factors affecting wine quality and builds predictive models to classify wines based on their physicochemical properties.
 
-## 📈 Project Highlights
-- Data cleaning and preprocessing
-- Visualization of feature distributions (e.g., alcohol, sulphates, citric acid)
-- Correlation matrix and feature importance analysis
-- Logistic Regression and baseline predictive modeling
-- Evaluation using accuracy and confusion matrix
-
-## 📂 Project Structure
-- `Clean_Wine_Quality_Analysis.ipynb`: Full workflow from EDA to ML
-- `winequality-red.csv`: Dataset used
-
-## 📊 Example Visualizations
-*(Optional: You can add sample plots like Alcohol vs Quality here)*
-
-## 🚀 Future Work
-- Test advanced models (Random Forest, XGBoost, etc.)
-- Perform feature engineering and hyperparameter tuning
-- Evaluate model with cross-validation
+The analysis covers both **Exploratory Data Analysis (EDA)** and **Machine Learning Modeling**, focusing on red and white wine datasets separately.
 
 ---
 
-📌 *This project was created as part of my hands-on data science learning journey, focusing on EDA, visualization, and basic machine learning techniques.*
+## 📚 Tools and Libraries
+
+- Python
+- Pandas
+- Numpy
+- Seaborn
+- Matplotlib
+- Scikit-learn
+- XGBoost
+
+---
+
+## 📈 Project Overview
+
+- **EDA**: Data cleaning, correlation analysis, and feature distribution visualizations.
+- **Feature Engineering**: Creation of new features and transformations where needed.
+- **Model Building**: Training classification models (Random Forest, XGBoost).
+- **Model Evaluation**: Confusion matrix and accuracy analysis.
+- **Feature Importance**: Understanding which features contribute most to wine quality prediction.
+
+---
+
+## 🖼️ Key Visuals
+
+### Feature Importance
+
+![Feature Importance](ML_visuals/feature_importance1.png)
+
+### Confusion Matrix
+
+![Confusion Matrix](ML_visuals/confusion_matrix.png)
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repository:
+```bash
+git clone https://github.com/Gokcisan/Wine-Quality-Analysis.git
