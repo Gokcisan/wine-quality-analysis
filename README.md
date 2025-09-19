@@ -1,47 +1,43 @@
-# 🍷 Wine Quality Analysis
+# Wine Quality Analysis (Red & White)
 
-This project explores the **Wine Quality** dataset to uncover insights into the factors affecting wine quality and builds predictive models to classify wines based on their physicochemical properties.
-
-The analysis covers both **Exploratory Data Analysis (EDA)** and **Machine Learning Modeling**, focusing on red and white wine datasets separately.
-
----
-
-## 📚 Tools and Libraries
-
-- Python
-- Pandas
-- Numpy
-- Seaborn
-- Matplotlib
-- Scikit-learn
-- XGBoost
+Exploratory Data Analysis (EDA) and basic machine learning on the **Wine Quality Dataset**.  
+The goal is to identify which chemical features most strongly influence wine quality and to test simple predictive models.
 
 ---
 
-## 📈 Project Overview
+## 🔍 Research Questions
 
-- **EDA**: Data cleaning, correlation analysis, and feature distribution visualizations.
-- **Feature Engineering**: Creation of new features and transformations where needed.
-- **Model Building**: Training classification models (Random Forest, XGBoost).
-- **Model Evaluation**: Confusion matrix and accuracy analysis.
-- **Feature Importance**: Understanding which features contribute most to wine quality prediction.
+- Which features show the strongest correlation with wine quality?  
+- How do red and white wines differ in their chemical profiles?  
+- Can a simple ML model predict quality with reasonable accuracy?  
 
 ---
 
-## 🖼️ Key Visuals
+## 📦 Dataset
 
-### Feature Importance
-
-![Feature Importance](ML_visuals/feature_importance1.png)
-
-### Confusion Matrix
-
-![Confusion Matrix](ML_visuals/confusion_matrix.png)
+- **Source:** UCI / Kaggle Wine Quality dataset  
+- **Samples:** Red = 1,599 | White = 4,898  
+- **Target variable:** `quality` (0–10)  
+- **Features:** `fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, alcohol`
 
 ---
 
-## 🚀 How to Run
+## 🗂 Project Structure
 
-1. Clone this repository:
-```bash
-git clone https://github.com/Gokcisan/Wine-Quality-Analysis.git
+```plaintext
+wine-quality-analysis/
+├─ data/
+│  ├─ raw/            # original csv files
+│  └─ processed/      # cleaned/combined versions
+├─ notebooks/
+│  ├─ 01_eda.ipynb    # exploratory analysis + plots
+│  ├─ 02_model.ipynb  # optional ML models
+│  └─ 03_viz.ipynb    # additional visualizations
+├─ src/
+│  ├─ utils.py        # helper functions
+│  └─ features.py     # preprocessing & feature engineering
+├─ reports/
+│  ├─ figures/        # exported plots
+│  └─ tables/         # summary tables
+├─ requirements.txt
+└─ README.md
